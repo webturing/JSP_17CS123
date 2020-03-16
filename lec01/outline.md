@@ -9,7 +9,10 @@ HTML5+CSS3+JavaScript库（FCC课程中文或者英文课程，拿到证书后�
 
 ### . Java 编程强化30%： 
 基础算法+String+集合框架（AOJ图灵慕课作业，按照比例和规则计分)
+
 ###. JSP+Web框架SSM50% :
+SSH: Struts Spring Hibernate
+SSM: Struts Spring MyBatis
 项目教学（等疫情稳定...预计4月中旬）
 
 
