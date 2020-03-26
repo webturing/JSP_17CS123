@@ -3,7 +3,7 @@ by ZHAO Jing
 
 ## Review
 
-### GIT命令
+### GIT命令/SVN
 - git clone 克隆 远程库
 - git add 增加待提交的文件
 - git commit 本地提交
@@ -24,17 +24,27 @@ by ZHAO Jing
 
 ## CSS基础
 ### CSS选择器 
-- 标签选择器
-- 类选择器
-- id选择器
-
+- 标签选择器 p{}
+- 类选择器 .red-text{}
+- id选择器 #form1{}
+- 优先级```!important>inline>class>inherit```
 
 ### 盒子模型
 - margin
 - padding
 
 ## 响应式Web开发：BootStrap库
-## JavaScript&JQuery
 
+## JavaScript&JQuery
+###  selector 
+- $(document)
+- $('p')
+- $('.red-text')
+- $('#id')
+### function
+- animate
+- css ```css('color',red')```
+- prop
+- text/html/val
 ## CSS3
 
