@@ -9,7 +9,7 @@ let sum = arr.reduce(function (s, y) { //reduce sum,product,max,min
 console.log('sum=', sum);
 
 let max = arr.reduce(function (s, y) { //max
-    return s > y?s:y;
+    return s > y ? s : y;
 }, arr[0]);
 console.log('max=', max);
 

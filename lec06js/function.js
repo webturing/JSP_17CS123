@@ -10,7 +10,7 @@ alert(add("hello","world"));
 var sub=function (a,b) {
     return a-b;
 
-}
+};
 console.log(sub(3,4));
 
 
@@ -28,5 +28,6 @@ document.write(
 
 //ES6 let const lambda函数
 
-//const div=((x,y)=>(x/y));
+const div=((x,y)=>(x/y));
+console.log(div(5,4));
 
