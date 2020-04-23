@@ -1,13 +1,19 @@
 package lec11corejava.hp;
 
+
 import java.math.BigInteger;
 
-public class PrimerTest
-{
+public class PrimerTest {
+    static BigInteger f(int n) {//2^2^n+1
+        BigInteger two = new BigInteger("2");
+        return two.pow(1 << n).add(BigInteger.ONE);
+    }
+
     public static void main(String[] args) {
-        int c=10;//1023/1024 99.9%
-        System.out.println(new BigInteger("65537").isProbablePrime(c));
-        System.out.println(new BigInteger("2").pow(1<<5).add(BigInteger.ONE));//f(5)=40亿+
-        System.out.println(new BigInteger("2").pow(1<<5).add(BigInteger.ONE).isProbablePrime(c));//f(5)=40亿+
+        for (int i = 0; i < 10; i++) {
+            System.out.println(
+                    String.format("f(%d)=%s %s",i,f(i),
+                    f(i).isProbablePrime(100))//4^(-100)=(0.25)^100
+            );}
     }
 }
