@@ -1,5 +1,4 @@
-package lec05acm.basic;
-
+package lec11corejava.basic;
 import java.util.Scanner;
 
 public class Sort3C {

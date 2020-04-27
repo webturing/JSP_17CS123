@@ -1,4 +1,4 @@
-package lec05acm.basic;
+package lec11corejava.basic;
 
 public class Sort2 {
     public static void main(String[] args) {
