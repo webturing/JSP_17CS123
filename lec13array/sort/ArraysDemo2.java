@@ -13,13 +13,7 @@ public class ArraysDemo2 {
 
         Arrays.sort(a,3,7);//区间排序
         System.out.println(Arrays.toString(a));
-        Arrays.sort(a,new Comparator<Integer>(){
-
-            @Override
-            public int compare(Integer ia, Integer ib) {
-                return ib-ia;
-            }
-        });
+        Arrays.sort(a, (ia, ib) -> ib-ia);
         System.out.println(Arrays.toString(a));
 
 

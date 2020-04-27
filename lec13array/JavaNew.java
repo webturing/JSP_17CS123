@@ -21,7 +21,7 @@ public class JavaNew {//jdk >=8.0 //jdk 11
 
         System.out.println("sum=" + a.stream().reduce(0, (x, y) -> (x + y)));
         System.out.println("product=" + a.stream().limit(5).reduce(1, (x, y) -> (x * y)));
-        System.out.println("max=" + a.stream().reduce(a.get(0), Math::max));
+        System.out.println("max=" + a.stream().reduce(a.get(0), (x,y)->x>y?x:y));
         System.out.println("min=" + a.stream().reduce(a.get(0), Math::min));
 
         Collections.shuffle(a);
