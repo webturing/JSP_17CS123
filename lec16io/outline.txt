@@ -1,0 +1,11 @@
+IO与异常处理
+Exception
+IO:
+1. 低级IO类
+	字节流：FileInputStream/FileOutputStream
+	字符流：FileReader/FileWriter
+2. Buffer为提高性能
+	字节流：BufferedInputStream/BufferedOutputStream
+	字符流：BufferedReader/BufferedWirter
+3. Scanner/PrintWriter
+4. File文件与目录
