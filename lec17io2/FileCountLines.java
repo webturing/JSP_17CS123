@@ -13,7 +13,7 @@ public class FileCountLines {
 
     }
 
-    private static int countLinesFromFile(String fileName) {
+    public static int countLinesFromFile(String fileName) {
         int tot = 0;
         try {
             Scanner cin = new Scanner(new File(fileName));

@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-
+//rm -rf
 public class FolderDemo {
     public static void main(String[] args) throws IOException {
         File parent=new File("demo1");
@@ -20,6 +20,8 @@ public class FolderDemo {
             subFolder.mkdir();
             for(int j=1;j<=9;j++){
                 File subsubFile=new File(subFolder,"2701170"+(i-70)+"0"+j+".txt");
+
+                subsubFile.createNewFile();
                 System.out.println(subsubFile.getAbsolutePath());
                 FileOutputStream fos=new FileOutputStream(subsubFile);
                for(int k=0;k<100;k++){
