@@ -36,13 +36,7 @@ public class ArraySort {
         System.out.println(Arrays.toString(points));
         Arrays.sort(points);
         System.out.println(Arrays.toString(points));
-        Arrays.sort(points, new Comparator<Point>() {
-            @Override
-            public int compare(Point o1, Point o2) {
-                // TODO Auto-generated method stub
-                return o1.y - o2.y;
-            }
-        });
+        Arrays.sort(points, Comparator.comparingInt(o -> o.y));
         System.out.println(Arrays.toString(points));
     }
 }

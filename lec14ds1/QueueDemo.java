@@ -3,7 +3,7 @@ package lec14ds1;
 public class QueueDemo {
     static class Queue {
         //data[head,tail)
-        int[] data = new int[10000];
+        int[] data = new int[10];
         int head = 0;
         int tail = 0;
 
@@ -33,9 +33,10 @@ public class QueueDemo {
 
     public static void main(String[] args) {
             Queue Q=new Queue();
-            for(int i=0;i<10;i++){
+            for(int i=0;i<20;i++){
                 Q.push(i);
                 Q.print();
+                Q.pop();
             }
             while(!Q.empty()){
                 Q.pop();

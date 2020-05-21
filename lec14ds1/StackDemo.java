@@ -7,19 +7,19 @@ public class StackDemo {
 
         void push(int x) {
             data[++top] = x;
-        }
+        }//O(1)
 
         int peek() {
             return data[top];
-        }
+        }//O(1)
 
         void pop() {
             --top;
-        }
+        }//O(1)
 
         boolean empty() {
             return top == -1;
-        }
+        }//O(1)
 
         @Override
         public String toString() {

@@ -1,7 +1,9 @@
 package lec13array;
 
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 public class JavaNew {//jdk >=8.0 //jdk 11
     public static void main(String[] args) {
@@ -26,11 +28,11 @@ public class JavaNew {//jdk >=8.0 //jdk 11
 
         Collections.shuffle(a);
         System.out.println(a);
-        Collections.sort(a, (x, y) -> x - y);//ascend
+        Collections.sort(a, Comparator.comparingInt(x -> x));//ascend
         System.out.println(a);
         Collections.sort(a, (x, y) -> y - x);//descend
         System.out.println(a);
-        Collections.sort(a, (x, y) -> x % 10 - y % 10);//按照个位数排序
+        Collections.sort(a, Comparator.comparingInt(x -> x % 10));//按照个位数排序
         System.out.println(a);
     }
 }
