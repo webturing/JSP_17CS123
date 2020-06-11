@@ -52,7 +52,7 @@ public class UserDAO3 {
     }
 
     private static boolean login(String name, String pass) {
-        String sql = "select * from users where user_id='" + name + "' and password= '" + pass + "'";
+        String sql = "select count(1) from users where user_id='" + name + "' and password= '" + pass + "' LIMIT 1";
         System.err.println(sql);
         boolean result = executeQuery(sql);
         if (result) {
@@ -67,7 +67,6 @@ public class UserDAO3 {
         try {
             ResultSet rs = stmt.executeQuery(sql);
             while (rs.next()) {
-
                 return true;
             }
             return false;
@@ -78,7 +77,12 @@ public class UserDAO3 {
     }
 
     private static boolean register(String name, String pass) {
-        String sql = "insert into users(user_id,password) VALUE('" + name + "','" + pass + "')";
+        String sql = "select count(1) from users where user_id='" + name + "'";
+        if (executeQuery(sql)) {
+            System.err.println("用户名已经存在,name=" + name);
+            return false;
+        }
+        sql = "insert into users(user_id,password) VALUE('" + name + "','" + pass + "')";
         System.err.println(sql);
         boolean result = executeUpdate(sql);
         if (result) {
